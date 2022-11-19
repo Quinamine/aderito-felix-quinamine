@@ -1,0 +1,63 @@
+.main-content {
+  padding: 0 0 20px 0;
+}
+.main-content h1, .main-content section {
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+@media screen and (max-width: 768px) {
+  .main-content h1, .main-content section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-content section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.main-content section h2 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.main-content section > span {
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px;
+  color: var(--gray-dark);
+}
+.main-content section a {
+  display: block;
+}
+
+.description > a {
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 5px;
+  background-color: var(--border-color);
+  text-align: center;
+  margin-left: auto;
+  color: var(--blc-text-color);
+  transition-duration: 400ms;
+}
+.description > a:hover {
+  background-color: var(--primary-color);
+  color: var(--yt);
+}
+@media screen and (max-width: 1023px) {
+  .description > a {
+    background-color: var(--primary-color);
+    color: var(--yt);
+  }
+}
+.description p a {
+  color: var(--blc-text-color);
+}
+.description p span.read-more {
+  color: var(--cor-terciaria);
+}
+
+/*# sourceMappingURL=portfolio.css.map */

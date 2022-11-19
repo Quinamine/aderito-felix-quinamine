@@ -1,0 +1,215 @@
+section.album {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.album h2 {
+  flex-basis: 100%;
+  font-size: 14px;
+  color: var(--cor-terciaria);
+}
+section.album figure {
+  max-height: 200px;
+  flex-basis: 196px;
+  max-width: 196px;
+  margin-right: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 2px var(--border-color);
+  transition: transform ease 250ms;
+}
+section.album figure:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  border: 1px solid var(--primary-color);
+}
+section.album figure:last-child {
+  margin-right: 0;
+}
+section.album figure img {
+  max-width: initial;
+}
+
+div.quinamine-pic-viewer {
+  background-color: var(--dark);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+div.quinamine-pic-viewer.on {
+  display: block;
+}
+div.quinamine-pic-viewer header {
+  border: none;
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  color: var(--yt-text-color);
+  position: relative;
+  top: 0;
+}
+@media screen and (max-width: 700px) {
+  div.quinamine-pic-viewer header {
+    position: fixed;
+    width: 100%;
+  }
+}
+div.quinamine-pic-viewer header span.logo {
+  margin: 0;
+  line-height: 1.8;
+}
+div.quinamine-pic-viewer header div.icons {
+  display: flex;
+  align-items: center;
+}
+div.quinamine-pic-viewer header button {
+  padding: 0;
+  min-width: 40px;
+  display: block;
+  border-radius: 2px;
+  background-color: inherit;
+  color: var(--yt-text-color);
+  font-size: 28px;
+}
+@media screen and (max-width: 1023px) {
+  div.quinamine-pic-viewer header button {
+    display: none;
+  }
+  div.quinamine-pic-viewer header button.close-qpv {
+    display: initial;
+  }
+}
+div.quinamine-pic-viewer header button:hover {
+  background-color: var(--gray-2-dark);
+}
+div.quinamine-pic-viewer header button.close-qpv:hover {
+  background-color: var(--danger-color);
+  color: var(--yt);
+}
+div.quinamine-pic-viewer header output {
+  min-width: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  div.quinamine-pic-viewer header output {
+    display: none;
+  }
+}
+div.quinamine-pic-viewer figure.frame {
+  max-height: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  div.quinamine-pic-viewer figure.frame::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    transition-duration: 250ms;
+    opacity: 0;
+  }
+  div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--gray-2-dark);
+  }
+  div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray-dark);
+  }
+  div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb:active {
+    background-color: var(--gray-2-dark);
+  }
+}
+div.quinamine-pic-viewer figure.frame img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  transition-duration: 250ms;
+}
+div.quinamine-pic-viewer figure.frame img.maxWidth-n-maxHeight-initial {
+  max-width: initial;
+  max-height: initial;
+}
+div.quinamine-pic-viewer figure.frame img.height-100 {
+  height: 100% !important;
+}
+div.quinamine-pic-viewer button.arrow {
+  font-size: 2rem;
+  background-color: var(--blc-alpha-5);
+  color: var(--yt-text-color);
+  border: 1px solid var(--cor-terciaria);
+  padding: 8px;
+  position: absolute;
+  top: calc(50vh - 27.5px);
+}
+@media screen and (max-width: 1023px) {
+  div.quinamine-pic-viewer button.arrow {
+    font-size: 24px;
+    border: 1px solid var(--border-color);
+  }
+  div.quinamine-pic-viewer button.arrow:hover {
+    background-color: var(--blc-alpha-5) !important;
+  }
+}
+div.quinamine-pic-viewer button.arrow:hover {
+  background-color: var(--gray-2-dark);
+}
+div.quinamine-pic-viewer button.arrow.off {
+  display: none !important;
+}
+div.quinamine-pic-viewer button.arrow.previous {
+  left: 0;
+}
+div.quinamine-pic-viewer button.arrow.next {
+  right: 0;
+}
+div.quinamine-pic-viewer footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blc-alpha-5);
+  padding: 20px 4px;
+}
+div.quinamine-pic-viewer footer span {
+  color: var(--yt);
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 670px) {
+  main.row {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  main.row h1, main.row h2 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  main.row figure {
+    margin: 0;
+    max-width: 100%;
+    max-height: 130px;
+  }
+  main.row section.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+  }
+  main.row section.album h2 {
+    grid-column: 1/4;
+  }
+}
+
+/*# sourceMappingURL=cv.css.map */
