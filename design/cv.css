@@ -34,6 +34,8 @@ section.album figure img {
     max-width: initial;
 }
 
+/* VISUALIZADOR DAS IMAGENS */
+
 div.quinamine-pic-viewer {
     background-color: var(--dark);
     width: 100%;
@@ -48,6 +50,8 @@ div.quinamine-pic-viewer {
 div.quinamine-pic-viewer.on {
     display: block;
 }
+
+/* CABECALHO DO VISUALIZADOR */
 
 div.quinamine-pic-viewer header {
     border: none;
@@ -78,42 +82,45 @@ div.quinamine-pic-viewer header div.icons {
     align-items: center;
 }
 
-div.quinamine-pic-viewer header button,
+div.quinamine-pic-viewer header button {
+    display: block;
+    min-width: 40px;
+    padding: 0;
+    border-radius: 2px;
+    background-color: inherit;
+    color: var(--yt-text-color);
+    font-size: 28px;
+}
+
+div.quinamine-pic-viewer header button:hover {
+    background-color: var(--gray-2-dark);
+}
+
+div.quinamine-pic-viewer header button.close-qpv:hover {
+    background-color: var(--danger-color);
+    color: var(--yt);
+}
+
+div.quinamine-pic-viewer header output {
+    min-width: 50px;
+    text-align: center;
+}
+
+div.quinamine-pic-viewer header button.zoom-in,
+div.quinamine-pic-viewer header button.zoom-out,
 div.quinamine-pic-viewer header output {
     display: none;
 }
 
-div.quinamine-pic-viewer header button.close-qpv {
-    display: initial;
-}
-
 @media screen and (min-width: 1024px) {
-    div.quinamine-pic-viewer header button {
-        display: initial;
-        padding: 0;
-        min-width: 40px;
-        display: block;
-        border-radius: 2px;
-        background-color: inherit;
-        color: var(--yt-text-color);
-        font-size: 28px;
-    }
-
-    div.quinamine-pic-viewer header button:hover {
-        background-color: var(--gray-2-dark);
-    }
-
-    div.quinamine-pic-viewer header button.close-qpv:hover {
-        background-color: var(--danger-color);
-        color: var(--yt);
-    }
-
+    div.quinamine-pic-viewer header button.zoom-in,
+    div.quinamine-pic-viewer header button.zoom-out,
     div.quinamine-pic-viewer header output {
         display: initial;
-        min-width: 50px;
-        text-align: center;
     }
 }
+
+/*  CORPO DO VISUALIZADOR */
 
 div.quinamine-pic-viewer figure.frame {
     max-height: 100%;
@@ -128,21 +135,24 @@ div.quinamine-pic-viewer figure.frame {
 
 @media screen and (min-width: 1024px) {
     div.quinamine-pic-viewer figure.frame::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-      opacity: 0;
-      transition-duration: 250ms;
-      opacity: 0;
+        width: 10px;
+        height: 10px;
+        opacity: 0;
+        transition-duration: 250ms;
+        opacity: 0;
     }
+
     div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb {
-      border-radius: 50px;
-      background-color: var(--gray-2-dark);
+        border-radius: 50px;
+        background-color: var(--gray-2-dark);
     }
+    
     div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb:hover {
-      background-color: var(--gray-dark);
+        background-color: var(--gray-dark);
     }
+
     div.quinamine-pic-viewer figure.frame::-webkit-scrollbar-thumb:active {
-      background-color: var(--gray-2-dark);
+        background-color: var(--gray-2-dark);
     }
 }
 
