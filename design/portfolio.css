@@ -1,63 +1,63 @@
-.main-content {
-  padding: 0 0 20px 0;
-}
-.main-content h1, .main-content section {
-  margin: 0;
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--border-color);
-}
-@media screen and (max-width: 768px) {
-  .main-content h1, .main-content section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .main-content section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-.main-content section h2 {
-  font-size: 18px;
-  margin-bottom: 2px;
-}
-.main-content section > span {
-  font-size: 12px;
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 2px;
-  color: var(--gray-dark);
-}
-.main-content section a {
-  display: block;
+div.main-content {
+    padding: 0 0 20px 0;
 }
 
-.description > a {
-  background-color: var(--primary-color);
-  padding: 8px;
-  border-radius: 5px;
-  background-color: var(--border-color);
-  text-align: center;
-  margin-left: auto;
-  color: var(--blc-text-color);
-  transition-duration: 400ms;
+div.main-content h1, 
+div.main-content section {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
 }
-.description > a:hover {
-  background-color: var(--primary-color);
-  color: var(--yt);
+
+@media screen and (min-width: 1024px) {
+  div.main-content h1, div.main-content section {
+      padding: 10px 20px
+  }
 }
-@media screen and (max-width: 1023px) {
-  .description > a {
+
+div.main-content section h2 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+div.main-content section > span {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 2px;
+    color: var(--gray-dark);
+}
+
+div.main-content section a {
+    display: block;
+}
+
+div.description > a {
+    background-color: var(--primary-color);
+    padding: 8px;
+    border-radius: 5px;
     background-color: var(--primary-color);
     color: var(--yt);
-  }
-}
-.description p a {
-  color: var(--blc-text-color);
-}
-.description p span.read-more {
-  color: var(--cor-terciaria);
+    text-align: center;
+    margin-left: auto;
+    transition-duration: 400ms;
 }
 
-/*# sourceMappingURL=portfolio.css.map */
+@media screen and (min-width: 1024px) {
+    div.description > a {
+        background-color: var(--border-color);
+        color: var(--blc-text-color);
+    }
+
+    div.description > a:hover {
+      background-color: var(--primary-color);
+      color: var(--yt);
+    }
+}
+
+div.description p a {
+    color: var(--blc-text-color);
+}
+div.description p span.read-more {
+    color: var(--gray);
+}
