@@ -29,13 +29,18 @@ blockquote,q {
     quotes: none
 }
 
-strong {
-    font-weight: 700;
-}
 
 blockquote:after,blockquote:before,q:after,q:before {
     content: '';
     content: none
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
 }
 
 abbr {
