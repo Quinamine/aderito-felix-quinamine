@@ -198,7 +198,6 @@ header {
 
     .header__nav__link:hover {
         background-color: var(--gray--light);
-        color: var(--cor-de-texto);
     }
 }
 
