@@ -1,9 +1,9 @@
 const visualizador = {
-    visualizador: document.querySelector(".visualizador-de-imagens"),
+    visualizador: document.querySelector(".image-viewer"),
     
     abrirImg(imgTarget) {
-        const currentImg = document.querySelector(".visualizador-de-imagens__img-actual");
-        const currentImgFigcaption = this.visualizador.querySelector(".visualizador-de-imagens__legenda");
+        const currentImg = document.querySelector(".image-viewer__frame__opened-img");
+        const currentImgFigcaption = this.visualizador.querySelector(".image-viewer__frame__figcaption");
 
         currentImg.src = imgTarget.src;
         currentImgFigcaption.textContent = imgTarget.alt;
@@ -42,7 +42,7 @@ const visualizador = {
     },
 
     retornarIndexDaImgActual() {
-        const currentImg = document.querySelector(".visualizador-de-imagens__img-actual");
+        const currentImg = document.querySelector(".image-viewer__frame__opened-img");
         let currentImgIndex = 0;
         for (let i = 0; i < imgs.length; i++) {
             if(imgs[i].src === currentImg.src) {
@@ -59,17 +59,17 @@ const imgs = document.querySelectorAll(".album img");
     visualizador.abrirImg(img);
 }));
 
-const btnFecharImg = document.querySelector(".visualizador-de-imagens__btn--fechar");
+const btnFecharImg = document.querySelector(".image-viewer__btn--fechar");
 btnFecharImg.addEventListener("click", () => {
     visualizador.fecharImg();
 });
 
-const btnNext = document.querySelector(".visualizador-de-imagens__btn--next");
+const btnNext = document.querySelector(".image-viewer__btn--next");
 btnNext.addEventListener("click", () => {
     visualizador.nextImg();
 });
 
-const btnPrevious = document.querySelector(".visualizador-de-imagens__btn--previous");
+const btnPrevious = document.querySelector(".image-viewer__btn--previous");
 btnPrevious.addEventListener("click", () => {
     visualizador.previousImg();
 });

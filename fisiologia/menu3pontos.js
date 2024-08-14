@@ -1,7 +1,7 @@
 
 
 const menuTresPontos = {
-    menuContent: document.querySelector(".header__container-de-contactos"),
+    menuContent: document.querySelector(".header__address"),
     abrirOuFechar() {
         this.menuContent.classList.toggle("--open");
     },

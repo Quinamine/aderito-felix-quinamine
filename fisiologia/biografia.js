@@ -3,7 +3,7 @@
 const autoTxt = "Olá, Mundo (\uD83C\uDF0F)! Eis a biografia de Adérito Félix Quinamine:";
 let txtIndex = 0;
 let txtLength = autoTxt.length;
-const output = document.querySelector(".banner__titulo-auto-text");
+const output = document.querySelector(".title--auto-typing");
 
 function autoDigitacao() {
     if(txtIndex < txtLength) {
