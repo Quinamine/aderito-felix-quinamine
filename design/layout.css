@@ -457,7 +457,8 @@ p {
     transition-duration: .4s;
 }
 .banner__progress__circle--full {
-    background-color: var(--cor-de-link)
+    background-color: var(--cor-de-link);
+    transform: scale(1.5);
 }
 .title--auto-typing {
     min-height: 50px;
