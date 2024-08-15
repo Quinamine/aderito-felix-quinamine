@@ -23,7 +23,7 @@ window.addEventListener("click", event => {
 
 window.addEventListener("scroll", () => menuTresPontos.fechar());
 
-(function actualizarAno() {
+(function actualizarAnoDeCopyrights() {
     const tempo = new Date();
     let anoActual = tempo.getFullYear();
 

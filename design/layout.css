@@ -399,6 +399,7 @@ p {
 .banner {
     background: linear-gradient(180deg,var(--gray--c) 0,var(--yt) 50%);
     min-height: 255px;
+    position: relative;
 }
 @media screen and (min-width: 1024px) {
     .banner {
@@ -409,21 +410,54 @@ p {
     }
 }
 .banner__frame {
-    min-height: 200px;
+    height: 200px;
+    overflow: hidden;
     position: relative;
-    box-shadow: 0 0 10px var(--border-color);
-    background: url("../imagens/aderito-na-infancia-banner.png") bottom center no-repeat;
-    transition-duration: 150ms;
+    box-shadow: 0 0 10px var(--cor-de-borda);
 }
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
     .banner__frame {
-        background-repeat: repeat;
+        background: url("../imagens/aderito-fundo-desktop.jpg") top center no-repeat;
+        transition-duration: 150ms;
     }
 }
-@media screen and (min-width: 600px) {
-    .banner__frame {
-        background: url("../imagens/aderito-fundo-desktop.jpg");
+.banner__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 1000ms;
+}
+@media screen and (min-width: 426px) {
+    .banner__img {
+        display: none;
     }
+}
+.banner__img--current {
+    opacity: 1;
+}
+.banner__progress {
+    position: absolute;
+    left: calc(50vw - 160px / 2);
+    top: 180px;
+    display: flex;
+}
+@media screen and (min-width: 426px) {
+    .banner__progress {
+        display: none;
+    }
+}
+.banner__progress__circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    padding: 5px;
+    border: 1px solid var(--cor-de-link);
+    border-radius: 50%;
+    transition-duration: .4s;
+}
+.banner__progress__circle--full {
+    background-color: var(--cor-de-link)
 }
 .title--auto-typing {
     min-height: 50px;
