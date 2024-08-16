@@ -28,8 +28,6 @@
     --orange: #faa032;
     --brown: brown;
     --reference-bgc: var(--black--alpha-8);
-
-    /* Tamanhos */
     --layout-width: 1024px;
     --input-font-size: 12px;
     --border-style: 1px solid var(--cor-de-borda);
@@ -328,6 +326,12 @@ p {
         border-bottom: 1px solid var(--cor-de-borda);
         text-transform: uppercase;
     }
+    .aside-of-main li:last-child {
+        margin-bottom: 35px;
+    }
+    .aside-of-main li.--no-margin-b {
+        margin-bottom: 0;
+    }
 }
 .section-skills {
     background: var(--cor-do-rodape);
@@ -342,15 +346,9 @@ p {
         padding-right: 20px
     }
 }
-.section-skills__title {
+.title--skills {
     color: var(--yt);
-}
-.section-skills__title--border-b {
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--variacao-da-cor-do-rodape);
-}
-.section-skills__title--font-medium {
-    font-size: 14px;
+    border-color: var(--variacao-da-cor-do-rodape);
 }
 .section-skills li {
     margin-bottom: 10px;
@@ -646,6 +644,9 @@ p {
 }
 .portfolio__advertising__img--border {
     border: 1px solid var(--cor-de-borda);
+}
+.portfolio__advertising__img--border-b {
+    border-bottom: 1px solid var(--cor-de-borda);
 }
 .portfolio__advertising__description {
     margin-top: 20px;
