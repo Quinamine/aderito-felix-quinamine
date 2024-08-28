@@ -436,7 +436,7 @@ p {
 }
 .banner__progress {
     position: absolute;
-    left: calc(50vw - 160px / 2);
+    left: calc(50vw - 192px / 2);
     top: 180px;
     display: flex;
 }
@@ -445,16 +445,16 @@ p {
         display: none;
     }
 }
-.banner__progress__circle {
+.banner__progress__btn {
     width: 12px;
     height: 12px;
-    margin: 0 4px;
+    margin: 0 6px;
     padding: 5px;
     border: 1px solid var(--cor-de-link);
-    border-radius: 50%;
+    background-color: transparent;
     transition-duration: .4s;
 }
-.banner__progress__circle--full {
+.banner__progress__btn--full {
     background-color: var(--cor-de-link);
     transform: scale(1.5);
 }

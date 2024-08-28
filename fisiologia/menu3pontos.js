@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => menuTresPontos.fechar());
     const tempo = new Date();
     let anoActual = tempo.getFullYear();
 
-    if(anoActual < 2022) return false;
+    if(anoActual < 2024) return false;
 
     const currentYearOutput = document.querySelector(".footer__current-year");
     currentYearOutput.textContent = `-${anoActual}`;
