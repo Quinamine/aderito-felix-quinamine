@@ -43,7 +43,7 @@ Em 2018, por curiosidade, pesquisou sobre Programação de computadores e após 
 * Fluência na digitação (50 WPM)
 
 ### Projectos
-* [Totalizador de Resumo Mensal de Tuberculose](https://quinamine.github.io/totalizador-de-resumo-mensal-de-tuberculose/index.html)
+* [Totalizador de Resumo Mensal de Notificação de TB e TB/HIV](https://quinamine.github.io/totalizador-de-resumo-mensal-de-notificacao-de-tb-e-tb-hiv/index.html)
 * [Totalizador de Mapa Resumo Mensal de Caixa](https://quinamine.github.io/totalizador-de-mapa-resumo-mensal-de-caixa/index.html)
 * [Totalizador de Resumo Trimestral de APSS/PP](https://quinamine.github.io/totalizador-de-resumo-trimestral-de-apss-e-pp/index.html)
 * [Totalizador de Resumo Mensal de Consultas](https://quinamine.github.io/totalizador-de-resumo-mensal-de-consultas/index.html)

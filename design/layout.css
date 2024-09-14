@@ -665,6 +665,9 @@ p {
     padding: 6px 0;
     transition-duration: 150ms;
 }
+.aside-of-main__link--display-inline {
+    display: inline !important;
+}
 .aside-of-main--page-of-portfolio li:hover,
 .aside-of-main--page-of-portfolio li:hover a {
     color: var(--cor-primaria);
