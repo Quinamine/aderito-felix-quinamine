@@ -29,8 +29,6 @@
     --brown: brown;
     --reference-bgc: var(--black--alpha-8);
     --layout-width: 1024px;
-    --input-font-size: 12px;
-    --border-style: 1px solid var(--cor-de-borda);
 }
 #body {
     color: var(--cor-de-texto);
@@ -660,13 +658,13 @@ p {
 .aside-of-main--page-of-portfolio li {
     margin-bottom: 0;
 }
+.aside-of-main--page-of-portfolio ul {
+    list-style: none;
+}
 .aside-of-main--page-of-portfolio a {
     display: inline-block;
     padding: 6px 0;
     transition-duration: 150ms;
-}
-.aside-of-main__link--display-inline {
-    display: inline !important;
 }
 .aside-of-main--page-of-portfolio li:hover,
 .aside-of-main--page-of-portfolio li:hover a {
