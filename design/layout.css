@@ -23,7 +23,7 @@
     --gray--light: #f0f0f0;
     --gray--fa: #fafafa;
     --blue: #0060EE;
-    --blue--light: #2573b5;
+    --blue--cobalt: #2573b5;
     --purple: rgb(116, 116, 235);
     --orange: #faa032;
     --brown: brown;
@@ -93,7 +93,7 @@ p {
     top: 0;
     z-index: 99;
     background-color: var(--yt);
-    border-bottom: var(--border-style);
+    border-bottom: thin solid var(--cor-de-borda);
 }
 .header__row {
     display: flex;
