@@ -1,6 +1,5 @@
 
 :root {
-    /* Cores */
     --cor-primaria: #0077ff;
     --cor-de-borda: #dddddd;
     --cor-de-link: var(--cor-primaria);
