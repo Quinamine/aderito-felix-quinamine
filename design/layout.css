@@ -269,10 +269,35 @@ p {
     margin: 0 auto;
     cursor: pointer;
 }
+.header__address__tooltip {
+    position: absolute;
+    right: 20px;
+    background-color: var(--cor-do-rodape);
+    box-shadow: 0 0 5px var(--gray);
+    color: var(--yt);
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 10px;
+    top: 45px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+.header__address__tooltip.--on {
+    visibility: visible;
+    opacity: 1;
+}
+.header__tooltip__arrow {
+    position: absolute;
+    right: 7px;
+    top: -15px;
+    border-bottom: 15px solid var(--cor-do-rodape);
+    border-left: 15px solid transparent;
+}
 /* Main */
 .container-of-main-n-aside {
     margin-top: 10px;
-    background: var(--yt);
+    background-color: var(--yt);
 }
 @media screen and (min-width: 1024px) {
     .container-of-main-n-aside {
@@ -354,7 +379,7 @@ p {
     }
 }
 .section-habilidades {
-    background: var(--cor-do-rodape);
+    background-color: var(--cor-do-rodape);
     padding: 20px 15px;
     position: relative;
     font-size: 12px;

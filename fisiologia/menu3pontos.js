@@ -23,4 +23,7 @@ window.addEventListener("scroll", () => menuTresPontos.fechar());
     const currentYearOutput = document.querySelector(".footer__current-year");
     currentYearOutput.textContent = `-${anoActual}`;
 }());
+const menuTipBox = document.querySelector(".header__address__tooltip");
+setTimeout(() => menuTipBox.classList.add("--on"), 3000);
+setTimeout(() => menuTipBox.classList.remove("--on"), 8000);
 
