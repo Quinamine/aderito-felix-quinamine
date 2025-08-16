@@ -17,7 +17,6 @@ if(mesIndex == 11) {
     document.body.classList.add("body-com-topo-propaganda");
     variavelDeSetTime = setTimeout(desejarFestasFelizes, 150);
 }
-// Fechar Topo Propaganda 
 const btnXDetopoProgaganda = document.querySelector(".topo-propaganda__btn");
 btnXDetopoProgaganda.addEventListener("click", () => {
     document.body.classList.remove("body-com-topo-propaganda");
