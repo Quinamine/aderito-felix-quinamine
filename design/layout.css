@@ -484,7 +484,7 @@ p {
 }
 .banner__progress {
     position: absolute;
-    left: calc(50vw - 192px / 2);
+    left: calc(50vw - 189px / 2);
     top: 180px;
     display: flex;
 }
@@ -494,11 +494,12 @@ p {
     }
 }
 .banner__progress__btn {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin: 0 6px;
     padding: 5px;
     border: 1px solid var(--cor-de-link);
+    border-radius: 20px;
     background-color: transparent;
     transition-duration: .4s;
 }
