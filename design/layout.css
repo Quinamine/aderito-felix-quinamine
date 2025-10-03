@@ -82,6 +82,9 @@ p {
     max-width: var(--layout-width);
     margin: 0 auto;
 }
+.--display-none {
+    display: none;
+}
 @media screen and (min-width: 1024px) {
     .header__row {
         max-width: calc(var(--layout-width) + 40px);
