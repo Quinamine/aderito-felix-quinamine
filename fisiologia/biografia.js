@@ -22,6 +22,7 @@ autoTyping();
 let imgIndex = 1;
 const imgs = document.querySelectorAll(".banner__img");
 const progressCircles = document.querySelectorAll(".banner__progress__btn");
+const fullScreenLink = document.querySelector(".banner__link-fullscreen");
 // Change Image Slide by click
 progressCircles.forEach( pCircle => {
     pCircle.addEventListener("click", () => {
@@ -38,7 +39,11 @@ function slide() {
         progressCircles[i].classList.remove("banner__progress__btn--full");
     }
     imgs[imgIndex].classList.add("banner__img--current");
-    progressCircles[imgIndex].classList.add("banner__progress__btn--full")
+    progressCircles[imgIndex].classList.add("banner__progress__btn--full");
+    // Mostrar imagem em tela cheia
+    let imgSrc = imgs[imgIndex].src;
+    if(imgs[imgIndex].matches(".banner__img--small")) {imgSrc = imgSrc.split(".jpg")[0] + "-fullscreen.jpg";}
+    fullScreenLink.href = imgSrc;
     imgIndex++;
     if(imgIndex === imgs.length) {
         imgIndex = 0;

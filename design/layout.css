@@ -484,15 +484,31 @@ p {
 }
 .banner__img--current {
     opacity: 1;
+    z-index: 1;
+}
+.banner__link-fullscreen {
+    position: absolute;
+    right: 0;
+    padding: 6px 10px;
+    color: var(--yt);
+    z-index: 2;
+    bottom: -3px;
+}
+.banner__link-fullscreen:active {
+    opacity: .7;
 }
 .banner__progress {
     position: absolute;
     left: calc(50vw - 243px / 2);
     top: 180px;
     display: flex;
+    z-index: 2;
 }
 @media screen and (min-width: 426px) {
     .banner__progress {
+        display: none;
+    }
+    .banner__link-fullscreen {
         display: none;
     }
 }
@@ -501,7 +517,7 @@ p {
     height: 15px;
     margin: 0 6px;
     padding: 5px;
-    border: 1px solid var(--cor-de-link);
+    border: 1.5px solid var(--cor-de-link);
     border-radius: 20px;
     background-color: transparent;
     transition-duration: .4s;
