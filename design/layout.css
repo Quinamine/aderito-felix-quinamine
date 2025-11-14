@@ -488,7 +488,7 @@ p {
 }
 .banner__link-fullscreen {
     position: absolute;
-    right: 0;
+    right: 5px;
     padding: 6px 10px;
     color: var(--yt);
     z-index: 2;
