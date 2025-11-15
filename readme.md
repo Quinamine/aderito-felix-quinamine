@@ -11,7 +11,7 @@ Em 2003 foi inscrito na Escola Primária de Mulapane, onde frequentou desde a 1�
 
 Em 2010 matriculou na Escola Secundária de Pemba, na qual frequentou até a 12ª classe em 2014 e em Março desse último ano frequentou o curso de Informática Básica aplicada na óptica de utilizador na GAJM Consultores, Lda.
 
-Em 2015 fez inscrição e começou a cursar Inglês no Instituto de Línguas de Pemba e no mesmo ano concorreu para uma das vagas do curso de Técnicos de Medicina Geral lançadas pelo Centro de Formação do Pessoal de Sáude de Pemba.
+Em 2015 fez inscrição e começou a cursar Inglês no Instituto de Línguas de Pemba e no mesmo ano concorreu para uma das vagas do curso de Técnicos de Medicina Geral lançadas pelo Centro de Formação de Sáude de Pemba.
 
 Em 2016 começou a frequentar o curso de Técnicos de Medicina Geral (motivo que o levou a interromper o curso de Inglês) até Julho de 2018, mês em que graduou e, no mês seguinte, participou do concurso do tipo entrevista lançado pela Direcção Provincial de Saúde de Cabo Delgado para nomeação para o Quadro dos Funcionários e Agentes do Aparelho do Estado.
 
