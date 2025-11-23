@@ -1,10 +1,10 @@
 # Adérito Félix Quinamine
 
-_Técnico de Medicina e Desenvolvedor web autodidata._
+_Técnico de medicina e Desenvolvedor web autodidata._
 
-[Adérito Félix Quinamine](https://quinamine.github.io/aderito-felix-quinamine/index.html), de nacionalidade moçambicana, filho de Alfane Quinamine e Maria de Lurdes Amurane, nascido aos 23 de Novembro de 1996 no distrito de Chiúre, província de Cabo Delgado. Passado menos de um quinquénio após seu nascimento, sua família mudou para Pemba, cidade onde Adérito passou sua infância e adolescência.
+[Adérito Félix Quinamine](https://quinamine.github.io/aderito-felix-quinamine/index.html), filho de Alfane Quinamine e de Maria de Lurdes Amurane, nasceu em 23 de Novembro de 1996, no distrito de [Chiúre](https://pt.wikipedia.org/wiki/Chi%C3%BAre_(distrito)), província de [Cabo Delgado](https://pt.wikipedia.org/wiki/Cabo_Delgado_(prov%C3%ADncia)), em [Moçambique](https://pt.wikipedia.org/wiki/Mo%C3%A7ambique). Cerca de cinco anos depois, a família mudou-se para Pemba, cidade onde Adérito passou a infância e a adolescência.
 
-![Adérito durante a infância.](imagens/aderito-na-infancia.jpg)
+![Adérito na infância.](imagens/aderito-na-infancia.jpg)
 Adérito durante a infância
 
 Em 2003 foi inscrito na Escola Primária de Mulapane, onde frequentou desde a 1ª à 7ª classe do Sistema Nacional de Educação (SNE).
@@ -17,7 +17,7 @@ Em 2016 começou a frequentar o curso de Técnicos de Medicina Geral (motivo que
 
 Em Dezembro saiu sua nomeação provisória e em Março do ano seguinte (2019) foi colocado para trabalhar no distrito de Mocimboa da Praia.
 
-![Adérito durante a infância.](imagens/aderito-em-mocimboa-da-praia.jpg)
+![Adérito em Mocimboa da Praia (Março de 2019).](imagens/aderito-em-mocimboa-da-praia.jpg)
 Adérito em Mocimboa da Praia (Março de 2019).
 
 ## Adérito e a Tecnologia
