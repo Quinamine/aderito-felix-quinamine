@@ -30,7 +30,14 @@
         </script>
         <noscript>O seu navegador está com o JavaScript desabilitado e isso interfere negativamente nas funcionalidades do site. Habilite-o nas configurações do navegador e recarregue a página.</noscript>
     </head>
-    <body id="body">
+    <body id="body" ontouchstart="">
+        <div class="topo-propaganda">
+            <div class="topo-propaganda__row">
+                <img src="../imagens/arvore-de-natal.png" alt="Árvore de Natal" class="topo-propaganda__img">
+                <p class="topo-propaganda__paragrafo"></p>
+                <button class="topo-propaganda__btn" title="Fechar">&times;</button>
+            </div>
+        </div>
         <header id="header">
             <div class="layout-row header__row">
                 <a href=../index.html class="header__logo">Adérito Félix Quinamine</a>
@@ -71,7 +78,17 @@
         </header>
         <div class="layout-row container-of-main-n-aside">
             <main class="main main--no-padding">
-                <h1 class="portfolio__h1">Portfólio</h1>
+                <div class="portfolio__container-de-h1">
+                    <h1 class="portfolio__h1">Portfólio</h1>
+                    <div class="portfolio__container-de-caixa-de-pesquisa">
+                        <input type="search" id="portfolio__input-search" placeholder="Pesquisar..." />
+                        <svg style="width: 27px; height: 20px" class="svg-lupa-de-pesquisa">
+                            <circle r="6" cx="17" cy="7" fill="transparent" stroke-width="2" stroke="var(--gray--5)"></circle>
+                            <line x1="14" x2="5px" y1="12" y2="20" stroke-width="2" stroke="var(--gray--5)"></line>
+                        </svg>
+                        <button class="portfolio__container-de-caixa-de-pesquisa__btn">&times;</button>
+                    </div>
+                </div>
                 <section class="portfolio__advertising">
                     <h2 class="title title--fs-h2">Totalizador de Resumo Mensal de Doença Avançada por HIV</h2>
                     <span class="portfolio__advertising__time">Disponível desde: <time datetime="2025-01-13">18/01/2025</time>.</span>      
@@ -373,6 +390,7 @@
                         <a href="https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html" target="_blank" class="portfolio__advertising__link">Acessar calculadora <span class="link-acessar__raquo">&raquo;</span></a>
                     </div>
                 </section>
+                <p class="msg-nothing-found-to-searching-on-portfolio --display-none"></p>
             </main>
             <aside class="aside-of-main aside-of-main--page-of-portfolio">
                 <h3 class="title aside-of-main__title">Projectos</h3>
@@ -407,9 +425,9 @@
                 </ul>
             </aside>
         </div>
-        <section class="layout-row section-skills">
+        <section class="layout-row section-habilidades">
             <h3 class="title title--fs-h3 title--border-b title--skills">Habilidades</h3>
-            <div class=section-skills__row>
+            <div class=section-habilidades__row>
                 <div>
                     <h4 class="title title--fs-h5 title--skills">Linguagens</h4>
                     <ul class=dominio-de-linguagens>
@@ -474,5 +492,7 @@
             </div>
         </footer>
         <script src="../fisiologia/menu3pontos.js"></script>
+        <script src="../fisiologia/search.js"></script>
+        <script src="../fisiologia/festasfelizes.js"></script>
     </body>
 </html>
